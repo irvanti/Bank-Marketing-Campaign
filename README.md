@@ -29,3 +29,15 @@ Pendekatan Analitik
 Pendekatan analitik yang dilakukan berupa pembuatan, evaluasi, dan implementasi model machine learning klasifikasi yang dapat memprediksi apabila nasabah potensial atau tidak berdasarkan riwayat data sebelumnya.
 
 Metrik Evaluasi
+ROC - AUC
+Target:
+0 : Pelanggan tidak churn
+1 : Pelanggan churn
+
+Type 1 error : False Positive
+Konsekuensi: Mengeluarkan biaya untuk pelanggan yang kurang tepa
+
+Type 2 error : False Negative
+Konsekuensi: Hilangnya nasabah potensial
+
+Berdasarkan konsekuensinya, langkah yang tepat untuk pemilihan model adalah model yang mengurangi nasabah potensial, tetapi tetap memperhatikan pengeluaran biaya pemasaran untuk pelanggan yang kurang tepat. Recall dan precision yang diseimbangkan akan dari kelas positif (Pelanggan churn). Metrik yang akan digunakan adalah ROC-AUC.
